@@ -1,0 +1,194 @@
+/* IMPORT RESET */
+@import url("reset.css");
+
+/* IMPORT 12 COLUMN RESPONSIVE GS */
+@import url("responsive.gs.16col.css");
+
+/*	EXAMPLE STYLES */
+body {
+	font-family: sans-serif;
+    background-color: #DD2E2D;
+    font-size: 10pt;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header img {
+    width: 400px;
+}
+
+.info {
+    font-size: 10pt;
+    color: white;
+    background-color: #DD2E2D;
+    text-align: center;
+}
+
+.info-header {
+    border-right: solid 1px white;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.info table {
+    border-collapse:separate; 
+    border-spacing: 5px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info td {
+    //white-space: nowrap;
+}
+
+.gallery img {
+    height: 200px;
+    display: block;
+}
+
+.fb {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+.menu {
+    padding-bottom: 10px;
+}
+
+.fb-col {
+    min-width: 280px;
+}
+
+.menu-item img {
+    display: block;
+    height: 200px;
+    margin-top: 3px;
+}
+
+.map {
+    text-align: center;
+    //background-color: #A2A178;
+    background-color: #DD2E2D;
+    padding: 10px;
+}
+
+#concept {
+    font-size: 11pt;
+    //text-align: center;
+}
+
+.separator {
+    background-image: url("../img/line.png");
+    background-repeat: repeat-x;
+    height: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.thumbnail {
+    position: relative;
+    width: auto;
+    height: 200px;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.thumbnail img.portrait {
+    width: 100%;
+    height: auto;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 20%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.address {
+    font-size: 13pt;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+@media ( max-width : 767px ) {
+    .thumbnail {
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-top: 3px;
+        height: 150px;
+    }
+
+    .fb {
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+
+    .span_4 {
+        width: 50%;
+    }
+
+    .header img {
+        width: 100%;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #concept {
+        //text-align: center;
+    }
+
+    .google-maps {
+        position: relative;
+        padding-bottom: 60%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+        margin: 20px;
+    }
+
+}
