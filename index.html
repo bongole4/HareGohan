@@ -5,22 +5,17 @@
         <meta charset="UTF-8">
         <title>HARE GOHAN</title>
         <link rel="stylesheet" href="css/style.css"></link>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"></link>
-        <!--
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.min.css"></link>
-        -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
-        <script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
-        <!--
-        <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
-        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.min.css"></link>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+        <script src="https://twemoji.maxcdn.com/twemoji.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
         <style>
-            /*
             .flickity-page-dots {
                 bottom: 0px;
+                display: none;
             }
-            */
 
             img.emoji {
                 height: 1em;
@@ -87,94 +82,82 @@
                 </div>
                 <div class="col span_10">
                     <div class="separator"></div>
+                    <div class="row">
+                        <div class="col span_16 gallery js-flickity" data-flickity-options='{ "wrapAround":true, "imagesLoaded": true, "percentPosition": false }'>
+                            <img src="img/gallery/1.jpg"/>
+                            <img src="img/gallery/2.jpg"/>
+                            <img src="img/gallery/3.jpg"/>
+                            <img src="img/gallery/4.jpg"/>
+                            <img src="img/gallery/5.jpg"/>
+                            <img src="img/gallery/6.jpg"/>
+                            <img src="img/gallery/7.jpg"/>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
                     <h2><img src="img/menu.png" alt="メニュー"></h2>
                     <div class="row">
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/1.jpg">
-                                    <img src="img/menu_thumbs/1.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/1.jpg');">
+                                <a class="fancybox" href="img/menu/1.jpg"></a>
                             </div>
                         </div>
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/2.jpg">
-                                    <img src="img/menu_thumbs/2.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/2.jpg');">
+                                <a class="fancybox" href="img/menu/2.jpg"></a>
                             </div>
                         </div>
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/3.jpg">
-                                    <img src="img/menu_thumbs/3.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/3.jpg');">
+                                <a class="fancybox" href="img/menu/3.jpg"></a>
                             </div>
                         </div>
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/4.jpg">
-                                    <img src="img/menu_thumbs/4.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/4.jpg');">
+                                <a class="fancybox" href="img/menu/4.jpg"></a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/5.jpg">
-                                    <img src="img/menu_thumbs/5.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/5.jpg');">
+                                <a class="fancybox" href="img/menu/5.jpg"></a>
                             </div>
                         </div>
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/6.jpg">
-                                    <img src="img/menu_thumbs/6.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/6.jpg');">
+                                <a class="fancybox" href="img/menu/6.jpg"></a>
                             </div>
                         </div>
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/7.jpg">
-                                    <img src="img/menu_thumbs/7.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/7.jpg');">
+                                <a class="fancybox" href="img/menu/7.jpg"></a>
                             </div>
                         </div>
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/8.jpg">
-                                    <img src="img/menu_thumbs/8.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/8.jpg');">
+                                <a class="fancybox" href="img/menu/8.jpg"></a>
                             </div>
                         </div>
-                    </div>                   
+                    </div>
                     <div class="row">
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/9.jpg">
-                                    <img src="img/menu_thumbs/9.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/9.jpg');">
+                                <a class="fancybox" href="img/menu/9.jpg"></a>
                             </div>
                         </div>
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/10.jpg">
-                                    <img src="img/menu_thumbs/10.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/10.jpg');">
+                                <a class="fancybox" href="img/menu/10.jpg"></a>
                             </div>
                         </div>
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/11.jpg">
-                                    <img src="img/menu_thumbs/11.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/11.jpg');">
+                                <a class="fancybox" href="img/menu/11.jpg"></a>
                             </div>
                         </div>
                         <div class="col span_4">
-                            <div class="thumbnail">
-                                <a class="fancybox" href="img/menu/12.jpg">
-                                    <img src="img/menu_thumbs/12.jpg">
-                                </a>
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/12.jpg');">
+                                <a class="fancybox" href="img/menu/12.jpg"></a>
                             </div>
                         </div>
                     </div>
