@@ -23,6 +23,10 @@
                 margin: 0 .05em 0 .1em;
                 vertical-align: -0.1em;
             }
+
+            .fancybox-title-inside-wrap {
+                text-align: center;
+            }
         </style>
 
     </head>
@@ -41,7 +45,13 @@
                 $(".fancybox").fancybox({
                     openEffect  : 'none',
                     closeEffect : 'none',
-                    autoCenter : true
+                    autoCenter : true,
+                    helpers : {
+                        title: {
+                            type: 'inside',
+                            position: 'bottom'
+                        }
+                    }
                 });
 
                twemoji.parse(document.getElementById('concept'));
@@ -98,67 +108,68 @@
                     <h2><img src="img/menu.png" alt="メニュー"></h2>
                     <div class="row">
                         <div class="col span_4">
-                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/15.jpg');">
-                                <a class="fancybox" href="img/menu/15.jpg"></a>
-                            </div>
-                        </div>
-                        <div class="col span_4">
-                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/17.jpg');">
-                                <a class="fancybox" href="img/menu/17.jpg"></a>
-                            </div>
-                        </div>
-                        <div class="col span_4">
                             <div class="thumbnail" style="background-image: url('/img/menu_thumbs/16.jpg');">
-                                <a class="fancybox" href="img/menu/16.jpg"></a>
+                                <a class="fancybox" href="img/menu/16.jpg" title="人気NO.1! アヒージョ!!"></a>
                             </div>
                         </div>
                         <div class="col span_4">
                             <div class="thumbnail" style="background-image: url('/img/menu_thumbs/1.jpg');">
-                                <a class="fancybox" href="img/menu/1.jpg"></a>
+                                <a class="fancybox" href="img/menu/1.jpg" title="ヱビス５種類が樽生で♪"></a>
+                            </div>
+                        </div>
+
+                        <div class="col span_4">
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/15.jpg');">
+                                <a class="fancybox" href="img/menu/15.jpg" title="HARE GOHANの焼きかりぃ<br>ランチ、ディナー食べられます♪"></a>
+                            </div>
+                        </div>
+                        <div class="col span_4">
+                            <div class="thumbnail" style="background-image: url('/img/menu_thumbs/17.jpg');">
+                                <a class="fancybox" href="img/menu/17.jpg" title="蓮根豚のキーマカレー<br>テイクアウトも出来ます！"></a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col span_4">
                             <div class="thumbnail" style="background-image: url('/img/menu_thumbs/2.jpg');">
-                                <a class="fancybox" href="img/menu/2.jpg"></a>
+                                <a class="fancybox" href="img/menu/2.jpg" title="ランチプレート 「郡司さんちの卵、特製オムライス」<br>白いオムライス！卵がふわふわ"></a>
                             </div>
                         </div>
                         <div class="col span_4">
                             <div class="thumbnail" style="background-image: url('/img/menu_thumbs/6.jpg');">
-                                <a class="fancybox" href="img/menu/6.jpg"></a>
+                                <a class="fancybox" href="img/menu/6.jpg" title="スズキとタコの柚子胡椒和風仕立て<br>ランチでも人気の一品。大根おろしでさっぱり"></a>
                             </div>
                         </div>
                         <div class="col span_4">
                             <div class="thumbnail" style="background-image: url('/img/menu_thumbs/7.jpg');">
-                                <a class="fancybox" href="img/menu/7.jpg"></a>
+                                <a class="fancybox" href="img/menu/7.jpg" title="ソーセージ５種盛り<br>ビールのお供に最高！！"></a>
                             </div>
                         </div>
                         <div class="col span_4">
                             <div class="thumbnail" style="background-image: url('/img/menu_thumbs/8.jpg');">
-                                <a class="fancybox" href="img/menu/8.jpg"></a>
+                                <a class="fancybox" href="img/menu/8.jpg" title="HARE GOHANの特製パスタ<br>日によって具材が変わります！<br>写真はボンゴレビアンコ"></a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col span_4">
                             <div class="thumbnail" style="background-image: url('/img/menu_thumbs/9.jpg');">
-                                <a class="fancybox" href="img/menu/9.jpg"></a>
+                                <a class="fancybox" href="img/menu/9.jpg" title="期間限定！焼き野菜のアンチョビクリームソースがけ"></a>
                             </div>
                         </div>
                         <div class="col span_4">
                             <div class="thumbnail" style="background-image: url('/img/menu_thumbs/3.jpg');">
-                                <a class="fancybox" href="img/menu/3.jpg"></a>
+                                <a class="fancybox" href="img/menu/3.jpg" title="フルーツジャー<br>生のフルーツが入ったフルーティーなカクテル！！<br>全種類ノンアルコールでも出来ます！"></a>
                             </div>
                         </div>
                         <div class="col span_4">
                             <div class="thumbnail" style="background-image: url('/img/menu_thumbs/18.jpg');">
-                                <a class="fancybox" href="img/menu/18.jpg"></a>
+                                <a class="fancybox" href="img/menu/18.jpg" title="パーティーコースメニュー！<br>HARE GOHANで人気のメニューが勢揃い！！"></a>
                             </div>
                         </div>
                         <div class="col span_4">
                             <div class="thumbnail" style="background-image: url('/img/menu_thumbs/12.jpg');">
-                                <a class="fancybox" href="img/menu/12.jpg"></a>
+                                <a class="fancybox" href="img/menu/12.jpg" title="つくば鶏のマヨマスタード焼き"></a>
                             </div>
                         </div>
                     </div>
