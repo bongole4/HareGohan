@@ -44,6 +44,11 @@ body {
     margin-bottom: 20px;
 }
 
+.info-data a {
+  color: white;
+  text-decoration: none;
+}
+
 .info td {
     //white-space: nowrap;
 }
