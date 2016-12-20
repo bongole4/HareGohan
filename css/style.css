@@ -68,6 +68,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-top: 5px;
+    height: 1000px;
 }
 
 .menu {
@@ -191,6 +192,7 @@ h2 {
         margin-right: 20px;
         margin-left: 20px;
         margin-top: 5px;
+        height: 400px;
     }
 
     .span_4 {

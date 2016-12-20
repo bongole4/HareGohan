@@ -34,15 +34,24 @@
     <body>
         <div id="fb-root"></div>
         <script>
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
 
             $(document).ready(function() {
+                var fb_html1 = '<div class="fb-page" data-href="https://www.facebook.com/pages/Hare-Gohan/358203077682471?fref=ts" data-tabs="timeline" data-height="1024" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>';
+                var fb_html2 = '<div class="fb-page" data-href="https://www.facebook.com/pages/Hare-Gohan/358203077682471?fref=ts" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"></div>';
+
+                if( parseInt($(".fb").css("margin-left")) == 0 ){
+                  $(".fb").html(fb_html1);
+                } else {
+                  $(".fb").html(fb_html2);
+                }
+
                 $(".fancybox").fancybox({
                     openEffect  : 'none',
                     closeEffect : 'none',
@@ -102,7 +111,6 @@
                         </tr>
                     </table>
                     <div class="fb">
-                        <div class="fb-page" data-href="https://www.facebook.com/pages/Hare-Gohan/358203077682471?fref=ts" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Hare-Gohan/358203077682471?fref=ts"><a href="https://www.facebook.com/pages/Hare-Gohan/358203077682471?fref=ts">Hare　Gohan</a></blockquote></div></div>               
                     </div>
                 </div>
                 <div class="col span_10">
