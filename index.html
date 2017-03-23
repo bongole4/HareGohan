@@ -13,6 +13,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
         <script src="https://twemoji.maxcdn.com/twemoji.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>
         <style>
             .flickity-page-dots {
                 bottom: 0px;
@@ -33,6 +34,7 @@
 
     </head>
     <body>
+      <!--
         <div id="fb-root"></div>
         <script>
           (function(d, s, id) {
@@ -68,7 +70,36 @@
                twemoji.parse(document.getElementById('concept'));
             });
         </script>
+        -->
 
+        <script>
+            $(document).ready(function() {
+              var fb_html1 = '<a href="https://instawidget.net/v/user/haregohan125" id="link-f72a91cd0011ab07e58cba6d0c0169a71aa07e7888d71a85a9a29996347b05c0">@haregohan125</a><script src="https://instawidget.net/js/instawidget.js?u=f72a91cd0011ab07e58cba6d0c0169a71aa07e7888d71a85a9a29996347b05c0&width=300px"></' + 'script>';
+              var fb_html2 = '<a href="https://instawidget.net/v/user/haregohan125" id="link-4c03febfb826bc93fcc0f0ca4134cf0808b4398249695fbb94a09cab6189d60f">@haregohan125</a><script src="https://instawidget.net/js/instawidget.js?u=4c03febfb826bc93fcc0f0ca4134cf0808b4398249695fbb94a09cab6189d60f&width=300px"></' + 'script>';
+
+                if( parseInt($(".fb").css("margin-left")) == 0 ){
+                  // pc
+                  postscribe('#widget', fb_html1);
+                } else {
+                  // mobile
+                  postscribe('#widget', fb_html2);
+                }
+
+                $(".fancybox").fancybox({
+                    openEffect  : 'none',
+                    closeEffect : 'none',
+                    autoCenter : true,
+                    helpers : {
+                        title: {
+                            type: 'inside',
+                            position: 'bottom'
+                        }
+                    }
+                });
+
+               twemoji.parse(document.getElementById('concept'));
+            });
+        </script>
 
         <div class="container row">
             <div class="header row">
@@ -111,7 +142,7 @@
                           </td>
                         </tr>
                     </table>
-                    <div class="fb">
+                    <div class="fb" id="widget">
                     </div>
                 </div>
                 <div class="col span_10">
