@@ -34,55 +34,17 @@
 
     </head>
     <body>
-      <!--
-        <div id="fb-root"></div>
-        <script>
-          (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
-
-            $(document).ready(function() {
-                var fb_html1 = '<div class="fb-page" data-href="https://www.facebook.com/pages/Hare-Gohan/358203077682471?fref=ts" data-tabs="timeline" data-height="1024" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>';
-                var fb_html2 = '<div class="fb-page" data-href="https://www.facebook.com/pages/Hare-Gohan/358203077682471?fref=ts" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"></div>';
-
-                if( parseInt($(".fb").css("margin-left")) == 0 ){
-                  $(".fb").html(fb_html1);
-                } else {
-                  $(".fb").html(fb_html2);
-                }
-
-                $(".fancybox").fancybox({
-                    openEffect  : 'none',
-                    closeEffect : 'none',
-                    autoCenter : true,
-                    helpers : {
-                        title: {
-                            type: 'inside',
-                            position: 'bottom'
-                        }
-                    }
-                });
-
-               twemoji.parse(document.getElementById('concept'));
-            });
-        </script>
-        -->
-
         <script>
             $(document).ready(function() {
-              var fb_html1 = '<a href="https://instawidget.net/v/user/haregohan125" id="link-f72a91cd0011ab07e58cba6d0c0169a71aa07e7888d71a85a9a29996347b05c0">@haregohan125</a><script src="https://instawidget.net/js/instawidget.js?u=f72a91cd0011ab07e58cba6d0c0169a71aa07e7888d71a85a9a29996347b05c0&width=300px"></' + 'script>';
-              var fb_html2 = '<a href="https://instawidget.net/v/user/haregohan125" id="link-4c03febfb826bc93fcc0f0ca4134cf0808b4398249695fbb94a09cab6189d60f">@haregohan125</a><script src="https://instawidget.net/js/instawidget.js?u=4c03febfb826bc93fcc0f0ca4134cf0808b4398249695fbb94a09cab6189d60f&width=300px"></' + 'script>';
+                var pc_html= '<a href="https://instawidget.net/v/user/haregohan" id="link-083aaeb9c18a29563a253d1c0d97d327f687bd62d9414483110d15a0feda8d40">@haregohan</a><script src="https://instawidget.net/js/instawidget.js?u=083aaeb9c18a29563a253d1c0d97d327f687bd62d9414483110d15a0feda8d40&width=300px"></' + 'script>';
+                var mobile_html = '<a href="https://instawidget.net/v/user/haregohan" id="link-69ce94ae30f2ad3bb52bea34179746c3af73071013419ba56ff3ffad0e3b2cdb">@haregohan</a><script src="https://instawidget.net/js/instawidget.js?u=69ce94ae30f2ad3bb52bea34179746c3af73071013419ba56ff3ffad0e3b2cdb&width=300px"></' + 'script>';
 
                 if( parseInt($(".fb").css("margin-left")) == 0 ){
                   // pc
-                  postscribe('#widget', fb_html1);
+                  postscribe('#widget', pc_html);
                 } else {
                   // mobile
-                  postscribe('#widget', fb_html2);
+                  postscribe('#widget', mobile_html);
                 }
 
                 $(".fancybox").fancybox({
@@ -130,7 +92,7 @@
                         <tr>
                           <td class="info-header">SNS</td>
                           <td class="info-data" style="font-size: 18pt;">
-                            <a href="https://www.instagram.com/haregohan125/">
+                            <a href="https://www.instagram.com/haregohan/">
                               <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
                             <a href="https://www.facebook.com/Hare-Gohan-358203077682471/" style="margin: 10px">
