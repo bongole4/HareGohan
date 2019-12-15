@@ -41,10 +41,11 @@
 
                 if( parseInt($(".fb").css("margin-left")) == 0 ){
                   // pc
-                  postscribe('#widget', pc_html);
+                  //postscribe('#widget', pc_html);
                 } else {
                   // mobile
-                  postscribe('#widget', mobile_html);
+                  //postscribe('#widget', mobile_html);
+                  $('#widget').height(0);
                 }
 
                 $(".fancybox").fancybox({
@@ -79,7 +80,7 @@
                             <td class="info-data">
                                 通常
                                 <br>
-                                11:00 ～ 15:00(L.O. 14:30)<br>
+                                11:30 ～ 15:00(L.O. 14:30)<br>
                                 18:00 ～ 23:00(L.O. 22:00)<br>
                                 <br>
                                 定休日前日 <br>18:00 ～ 22:00(L.O. 21:00)<br>
@@ -87,7 +88,9 @@
                         </tr>
                         <tr>
                             <td class="info-header">定休日</td>
-                            <td class="info-data">火曜日、第３月曜日(祝日の場合変更あり)</td>
+                            <td class="info-data">火曜日、第３月曜日(祝日、イベントの場合変更あり)<br>
+                              ※店舗スケジュール変更の場合はSNSにて発信しています<br>ので、ご確認お願いします。
+                            </td>
                         </tr>
                         <tr>
                           <td class="info-header">SNS</td>
@@ -229,7 +232,7 @@
             <div class="row">
                 <div class="separator"></div>
                 <h2 class="center"><img src="img/access.png" alt="アクセス"></h2>
-                <h3 class="address">つくば市学園の森3-21-1 MeeToco B-2</h3>
+                <h3 class="address">茨城県つくば市学園の森3-21-1 MeeToco B-2</h3>
                 <div class="google-maps">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12896.114374819725!2d140.0910946!3d36.092791!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe69c9236e03da027!2z44OP44OsIOOCtOODj-ODsw!5e0!3m2!1sja!2sjp!4v1448273946018" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
